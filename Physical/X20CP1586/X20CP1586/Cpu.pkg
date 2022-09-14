@@ -15,7 +15,6 @@
     <Object Type="Package">mappServices</Object>
     <Object Type="Package">mappView</Object>
     <Object Type="Package">mappCockpit</Object>
-    <Object Type="Package">DTM</Object>
   </Objects>
   <Configuration ModuleId="X20CP1586">
     <AutomationRuntime Version="B4.63" />
