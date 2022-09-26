@@ -1,12 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <BR.AS.HardwareTopology Version="0.0.0.1">
   <TimeStamps>
-    <TimeStamp LogicalPath="X20CP1586.Hardware.hw" LastWriteTime="09/14/2022 17:18:16" />
+    <TimeStamp LogicalPath="X20CP1586.Hardware.hw" LastWriteTime="09/23/2022 09:49:06" />
   </TimeStamps>
   <Modules>
     <Module Name="X20CP1586" Type="X20CP1586" X="100" Y="100" />
     <Module Name="X20IF1041_1" Type="X20IF1041-1" X="212" Y="100" />
+    <Module Name="X20IF1043_1__DTM_" Type="FBD.Hilscher.COGenSlaveDTM.X20IF1043-1 (BuR-X20IF1043-1.eds)" X="296" Y="212" />
   </Modules>
-  <Links />
+  <Links>
+    <Link From="X20IF1041_1" To="X20IF1043_1__DTM_" FromPort="IF1" ToPort="CAN1" IsRoutedByUser="False">
+      <Point X="224" Y="187" />
+      <Point X="224" Y="187" />
+      <Point X="224" Y="200" />
+      <Point X="224" Y="251" />
+      <Point X="295" Y="251" />
+      <Point X="315" Y="251" />
+      <Point X="315" Y="251" />
+    </Link>
+  </Links>
   <InfoElements />
 </BR.AS.HardwareTopology>

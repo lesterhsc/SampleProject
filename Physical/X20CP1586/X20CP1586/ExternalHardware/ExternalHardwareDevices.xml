@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExternalHardware>
+  <Modules>
+    <Module ModuleID="FBD.Hilscher.COGenSlaveDTM.X20IF1043-1 (BuR-X20IF1043-1.eds)" Version="0xA70B.0x00020014" OrderNumber="X20IF1043-1 (DTM)">
+      <SourceFile OriginalFile="BuR-X20IF1043-1.eds" TranslationFile="QPV8NRUO.ext" />
+    </Module>
+  </Modules>
+</ExternalHardware>
