@@ -1,22 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <BR.AS.HardwareTopology Version="0.0.0.1">
   <TimeStamps>
-    <TimeStamp LogicalPath="X20CP1586.Hardware.hw" LastWriteTime="09/23/2022 09:49:06" />
+    <TimeStamp LogicalPath="X20CP1586.Hardware.hw" LastWriteTime="09/27/2022 10:13:28" />
   </TimeStamps>
   <Modules>
-    <Module Name="X20CP1586" Type="X20CP1586" X="100" Y="100" />
-    <Module Name="X20IF1041_1" Type="X20IF1041-1" X="212" Y="100" />
-    <Module Name="X20IF1043_1__DTM_" Type="FBD.Hilscher.COGenSlaveDTM.X20IF1043-1 (BuR-X20IF1043-1.eds)" X="296" Y="212" />
+    <Module Name="X20CP1586" Type="X20CP1586" X="-459" Y="-194" />
+    <Module Name="X20IF1041_1" Type="X20IF1041-1" X="-347" Y="-194" />
+    <Module Name="X20IF1043_1__DTM_" Type="FBD.Hilscher.COGenSlaveDTM.X20IF1043-1 (BuR-X20IF1043-1.eds)" X="-266" Y="-77" />
   </Modules>
   <Links>
-    <Link From="X20IF1041_1" To="X20IF1043_1__DTM_" FromPort="IF1" ToPort="CAN1" IsRoutedByUser="False">
-      <Point X="224" Y="187" />
-      <Point X="224" Y="187" />
-      <Point X="224" Y="200" />
-      <Point X="224" Y="251" />
-      <Point X="295" Y="251" />
-      <Point X="315" Y="251" />
-      <Point X="315" Y="251" />
+    <Link From="X20IF1043_1__DTM_" To="X20IF1041_1" FromPort="CAN1" ToPort="IF1" IsRoutedByUser="False">
+      <Point X="-247" Y="-38" />
+      <Point X="-247" Y="-38" />
+      <Point X="-267" Y="-38" />
+      <Point X="-335" Y="-38" />
+      <Point X="-335" Y="-94" />
+      <Point X="-335" Y="-107" />
+      <Point X="-335" Y="-107" />
     </Link>
   </Links>
   <InfoElements />
