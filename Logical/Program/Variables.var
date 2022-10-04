@@ -1,4 +1,0 @@
-VAR
-	nxcomStartStop_0 : nxcomStartStop;
-	NAME : STRING[80];
-END_VAR
