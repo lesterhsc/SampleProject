@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.6.7.161 SP?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Program" Language="IEC" Description="for PDOs and Can Layer 2 functions">CAN_L2</Object>
+  </Objects>
+  <Dependencies>
+    <Dependency ObjectName="ascanopen" />
+  </Dependencies>
+</Package>

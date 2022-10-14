@@ -6,6 +6,7 @@
   <TaskClass Name="Cyclic#3" />
   <TaskClass Name="Cyclic#4">
     <Task Name="SDO" Source="LibAsCanOpen3_ST.SDO.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="CAN_L2" Source="LibAsCanOpen2_ST.CAN_L2.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <TaskClass Name="Cyclic#5" />
   <TaskClass Name="Cyclic#6" />
