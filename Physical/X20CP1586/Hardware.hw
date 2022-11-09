@@ -1,6 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?AutomationStudio Version=4.6.7.161?>
 <Hardware xmlns="http://br-automation.co.at/AS/Hardware">
+  <Module Name="4PPC70_101G_23W" Type="4PPC70.101G-23W" Version="1.4.0.0">
+    <Connection Connector="IF2" TargetModule="X20CP1586" TargetConnector="IF2">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.2" />
+    </Connection>
+    <Connector Name="IF2" />
+    <Parameter ID="Terminal" Value="true" />
+    <Parameter ID="KeyMappingFile" Value="VC\4PPC70_101G_23W1.dis" />
+  </Module>
   <Module Name="X20CP1586" Type="X20CP1586" Version="1.10.0.0">
     <Connector Name="IF2">
       <Parameter ID="ActivateDevice" Value="1" />
@@ -19,79 +27,78 @@
     <Parameter ID="ConfigModule" Value="asnxdb1" />
   </Module>
   <Module Name="X20IF1043_1__DTM_" Type="FBD.Hilscher.COGenSlaveDTM.X20IF1043-1 (BuR-X20IF1043-1.eds)" Version="0xA70B.0x00020014" OrderNumber="X20IF1043-1 (DTM)" VendorAddress="2">
-    <Connection Connector="CAN1" TargetModule="X20IF1041_1" TargetConnector="IF1" NodeNumber="2" />
-    <Parameter ID="DtmId" Value="382273eb-d868-4303-b522-46dd91ad0083" />
-    <Group ID="ChannelBlocks_65559379-b3ba-4420-8cda-83c8a80043a9" Description="RxPDO_01" />
-    <Group ID="IO_14070c76-8432-4ac7-a448-24c2387ce9ef" Description="1 Byte(s)" />
-    <Group ID="IO_3a5d520e-6596-4bd8-a591-fef9ed0df926" Description="1 Byte(s)" />
-    <Group ID="IO_dfae2354-589f-4c76-9e44-d1f4d79bbaf2" Description="1 Byte(s)" />
-    <Group ID="IO_934961e5-a28d-4ad5-bd09-4706c609d66f" Description="1 Byte(s)" />
-    <Group ID="IO_1764010b-59d7-426b-9756-6cd8b2b8cdd2" Description="1 Byte(s)" />
-    <Group ID="IO_2369252e-0ba6-44bd-9ba8-5475b1576392" Description="1 Byte(s)" />
-    <Group ID="IO_3509ff99-8427-458a-a273-cd813d334755" Description="1 Byte(s)" />
-    <Group ID="IO_b6bbbb10-73a0-4db9-a954-27c3caee6e45" Description="1 Byte(s)" />
-    <Group ID="ChannelBlocks_ab0b896a-3f1d-4f5a-a65d-ff93ccf7dc4e" Description="RxPDO_02" />
-    <Group ID="IO_d0f3d52e-6a13-489a-a029-40b39ab37067" Description="1 Byte(s)" />
-    <Group ID="IO_b8b92bbb-84fc-4865-b31e-42da60450204" Description="1 Byte(s)" />
-    <Group ID="IO_ace00fe1-a3ea-4dfe-9577-2398ece282e4" Description="1 Byte(s)" />
-    <Group ID="IO_49e62b7d-56d9-4bda-ab08-27356d6202c9" Description="1 Byte(s)" />
-    <Group ID="IO_d1c9e672-fe70-411d-a82c-f063ddcdbb3b" Description="1 Byte(s)" />
-    <Group ID="IO_ed0a4c6c-3398-4b30-abe7-c09203f3f0bb" Description="1 Byte(s)" />
-    <Group ID="IO_fe837d37-a6b6-4e5d-ad5c-329a536edf7e" Description="1 Byte(s)" />
-    <Group ID="IO_b03962eb-c967-4e6b-9f3e-1b30d4613b88" Description="1 Byte(s)" />
-    <Group ID="ChannelBlocks_0fcaa37f-d590-4989-b4c8-3b074e3f82a5" Description="RxPDO_03" />
-    <Group ID="IO_1e81f73f-f437-486e-88d0-eb1863d91d2a" Description="1 Byte(s)" />
-    <Group ID="IO_9f661cae-4f45-468e-bdbb-505bde5f1766" Description="1 Byte(s)" />
-    <Group ID="IO_aa31ff58-5349-45d3-9ccc-0cd849efd0d9" Description="1 Byte(s)" />
-    <Group ID="IO_2509a727-7bf9-48a3-bb4d-9d542d71ce8a" Description="1 Byte(s)" />
-    <Group ID="IO_4eac3d04-eede-4b5a-8ce2-c7f509f744cf" Description="1 Byte(s)" />
-    <Group ID="IO_c5ae621f-44c6-4ec3-8ce3-7308dd06e946" Description="1 Byte(s)" />
-    <Group ID="IO_66b26c62-57d0-4c7d-9cf7-2d311ba94726" Description="1 Byte(s)" />
-    <Group ID="IO_31a944b2-3045-47ec-81d8-594703691207" Description="1 Byte(s)" />
-    <Group ID="ChannelBlocks_8a215815-f2b0-4995-9515-d146739bd3fd" Description="RxPDO_04" />
-    <Group ID="IO_d9c866f1-8813-4493-bb9e-1bb4aced5522" Description="1 Byte(s)" />
-    <Group ID="IO_a4cbd618-af1b-41eb-a46c-ab86f90e5895" Description="1 Byte(s)" />
-    <Group ID="IO_601654de-a627-4815-a45e-612da7952a2b" Description="1 Byte(s)" />
-    <Group ID="IO_8a0ffa14-72a0-42c9-a5b1-1f98cf521d80" Description="1 Byte(s)" />
-    <Group ID="IO_bbc8b1ad-0fd6-49e3-8e05-5266ae44403a" Description="1 Byte(s)" />
-    <Group ID="IO_6fad4105-b250-4275-a963-a26a3b23632c" Description="1 Byte(s)" />
-    <Group ID="IO_ef7fcd56-6a98-40b0-8243-24a0371b2572" Description="1 Byte(s)" />
-    <Group ID="IO_f6998a6a-debb-4867-9849-ee7cf11d9e9e" Description="1 Byte(s)" />
-    <Group ID="ChannelBlocks_cbda58ff-3a16-44ce-81c8-632a0fbc7426" Description="TxPDO_01" />
-    <Group ID="IO_d42d0e5b-0c6b-4f0d-a39b-03cf9081a26b" Description="1 Byte(s)" />
-    <Group ID="IO_e6a655b4-0e0e-4eec-b0d6-496ed9d57655" Description="1 Byte(s)" />
-    <Group ID="IO_14cfaf85-97d8-40b8-929c-c40e2563086c" Description="1 Byte(s)" />
-    <Group ID="IO_e95634f7-c656-4a3b-8bf7-d719d0648b89" Description="1 Byte(s)" />
-    <Group ID="IO_b3e54bc8-355d-4419-b517-022e44f53cbc" Description="1 Byte(s)" />
-    <Group ID="IO_16e71e34-ba1a-4c8c-b6ec-61641f839408" Description="1 Byte(s)" />
-    <Group ID="IO_7de44276-ef3d-4476-ae50-3706bf965c7c" Description="1 Byte(s)" />
-    <Group ID="IO_ff08790a-06e4-454e-b342-da92560949df" Description="1 Byte(s)" />
-    <Group ID="ChannelBlocks_add64503-2fc5-484d-aa51-bd704e1b8a9f" Description="TxPDO_02" />
-    <Group ID="IO_cf394d07-a42c-4fa0-8c60-23220f40f01c" Description="1 Byte(s)" />
-    <Group ID="IO_87413764-4620-417b-8294-6dd32785539a" Description="1 Byte(s)" />
-    <Group ID="IO_ea3f34cc-0358-4abc-be2e-a44e93899e36" Description="1 Byte(s)" />
-    <Group ID="IO_46c0a63f-43b3-4825-b1d3-bba3337ca615" Description="1 Byte(s)" />
-    <Group ID="IO_c1fd06a0-5ebf-40b5-8e81-3dc196b3e0ed" Description="1 Byte(s)" />
-    <Group ID="IO_b32b34a0-53f7-4952-ab86-7c4c30d54b31" Description="1 Byte(s)" />
-    <Group ID="IO_0bce08f0-326b-4b2b-9e07-7a162c92d7f7" Description="1 Byte(s)" />
-    <Group ID="IO_bf0ecdb5-6fa3-4556-b4e8-fc488a48dae3" Description="1 Byte(s)" />
-    <Group ID="ChannelBlocks_23ebb410-1b70-4fa3-aa4c-cb974a527c7a" Description="TxPDO_03" />
-    <Group ID="IO_d63e60c9-2cb1-4e87-8a83-65ec9d7a183d" Description="1 Byte(s)" />
-    <Group ID="IO_952c3d63-7395-422e-9198-6dec1a1eb088" Description="1 Byte(s)" />
-    <Group ID="IO_b0d32a21-0e76-461d-b09b-17e2f5d4de4c" Description="1 Byte(s)" />
-    <Group ID="IO_8497ea7b-3cf0-4883-b920-977b621cefa5" Description="1 Byte(s)" />
-    <Group ID="IO_d5876926-60e3-4489-a328-039b06cec28e" Description="1 Byte(s)" />
-    <Group ID="IO_45c29ee0-5328-4416-b270-a452da72da6f" Description="1 Byte(s)" />
-    <Group ID="IO_67e8e5c9-e85e-4ead-a649-f23d1fb20942" Description="1 Byte(s)" />
-    <Group ID="IO_c5d4262d-f0db-4796-8e70-41f778e8003a" Description="1 Byte(s)" />
-    <Group ID="ChannelBlocks_0dad468d-0ea9-4132-b569-fb18fce20c5d" Description="TxPDO_04" />
-    <Group ID="IO_77b872a1-6455-4ea9-8d0b-19addd19f074" Description="1 Byte(s)" />
-    <Group ID="IO_cb967be7-6cc1-4eaf-a7d4-f960c063ce29" Description="1 Byte(s)" />
-    <Group ID="IO_214d0ab6-e2bc-4335-80bc-22c09f1dd2b5" Description="1 Byte(s)" />
-    <Group ID="IO_e138944b-fbb9-4ff7-9a4d-3212118bfb56" Description="1 Byte(s)" />
-    <Group ID="IO_37140fe1-9ffb-4933-b19e-089036a84ed9" Description="1 Byte(s)" />
-    <Group ID="IO_948e5ff3-44cb-43cc-bbd2-0bf6707399bb" Description="1 Byte(s)" />
-    <Group ID="IO_27ca5bc6-e243-409c-a5db-50d4f3197db3" Description="1 Byte(s)" />
-    <Group ID="IO_069d0339-4dd4-42cd-8c9a-847c577e9cd0" Description="1 Byte(s)" />
+    <Parameter ID="DtmId" Value="" />
+    <Group ID="ChannelBlocks_722b6533-4489-40d8-aae4-ca0f676f7389" Description="RxPDO_01" />
+    <Group ID="IO_d52191ed-4c54-4aa1-a555-7a825949a8e7" Description="1 Byte(s)" />
+    <Group ID="IO_af2aac78-a722-4896-b9e5-1e0a5520eff8" Description="1 Byte(s)" />
+    <Group ID="IO_d3d611f7-76ca-4a12-9739-4a5263261990" Description="1 Byte(s)" />
+    <Group ID="IO_28b2f819-6018-4271-9e84-a707596ceac6" Description="1 Byte(s)" />
+    <Group ID="IO_602cc8aa-9b3a-44f0-8874-f1db9f83001c" Description="1 Byte(s)" />
+    <Group ID="IO_ddc36243-cae0-4301-b86b-f666f3c64e48" Description="1 Byte(s)" />
+    <Group ID="IO_1c4766d3-e1da-4921-8d87-31443da98228" Description="1 Byte(s)" />
+    <Group ID="IO_b8dce777-eb45-4337-9ffb-03c754224648" Description="1 Byte(s)" />
+    <Group ID="ChannelBlocks_8ed83e9a-ae4b-4b45-a0a9-fc1bb8b705e1" Description="RxPDO_02" />
+    <Group ID="IO_ee120ad1-81d2-4465-b35d-721146a1a332" Description="1 Byte(s)" />
+    <Group ID="IO_19650846-5f72-44c2-b9fe-403733023f40" Description="1 Byte(s)" />
+    <Group ID="IO_7738ffe0-6403-4fb1-8263-19848970e7e6" Description="1 Byte(s)" />
+    <Group ID="IO_6fe8a185-5111-4af8-bbfc-95a7497bd028" Description="1 Byte(s)" />
+    <Group ID="IO_049ba4af-e80a-4ae3-8440-0f18dcbcee35" Description="1 Byte(s)" />
+    <Group ID="IO_8b1abd60-5eef-4bde-acd4-b9ff9ef701bf" Description="1 Byte(s)" />
+    <Group ID="IO_d0747008-f825-4f1e-bb1b-93a7cf56cb81" Description="1 Byte(s)" />
+    <Group ID="IO_c2f4c436-f256-4d0e-8b66-210290ce442f" Description="1 Byte(s)" />
+    <Group ID="ChannelBlocks_1db14d39-2e65-4f01-bc05-86015beae453" Description="RxPDO_03" />
+    <Group ID="IO_3ee0241e-3cfb-4054-801c-74f6996894b1" Description="1 Byte(s)" />
+    <Group ID="IO_789b20b5-0e27-465d-97d3-aed39c6f7b4d" Description="1 Byte(s)" />
+    <Group ID="IO_d9629a54-0cdc-4e26-b1cc-0f655d7bb79f" Description="1 Byte(s)" />
+    <Group ID="IO_a93ca36c-91d5-41c1-915d-1e4cef6a746b" Description="1 Byte(s)" />
+    <Group ID="IO_44ca810e-2581-480c-9b94-579ce733f4b7" Description="1 Byte(s)" />
+    <Group ID="IO_984bf984-2e1d-45ca-ab11-e03385754100" Description="1 Byte(s)" />
+    <Group ID="IO_3cd7342f-1a3c-4cf9-8ec7-0170b8e06b47" Description="1 Byte(s)" />
+    <Group ID="IO_e044fedb-29b7-41a4-94d1-1d44f9408bcf" Description="1 Byte(s)" />
+    <Group ID="ChannelBlocks_33ebcf44-3191-4247-9018-03441b781fe0" Description="RxPDO_04" />
+    <Group ID="IO_6491ab94-007b-49f2-8672-c682e9e2e849" Description="1 Byte(s)" />
+    <Group ID="IO_460835e5-b8fa-402e-a324-cc668286b199" Description="1 Byte(s)" />
+    <Group ID="IO_5b7d73de-ee35-47d5-b46d-6039ffd4758c" Description="1 Byte(s)" />
+    <Group ID="IO_9b243a73-0c8a-489e-a35b-5add7f9c92f1" Description="1 Byte(s)" />
+    <Group ID="IO_2cd10077-e43a-4b7d-9aaf-b023667561cc" Description="1 Byte(s)" />
+    <Group ID="IO_0d8de401-27e5-4c9d-967e-d8547063eb60" Description="1 Byte(s)" />
+    <Group ID="IO_7a1dea3c-9662-43fd-bbbf-d79c8de14278" Description="1 Byte(s)" />
+    <Group ID="IO_cc53336f-8a1e-453e-8010-e83ee473a7c8" Description="1 Byte(s)" />
+    <Group ID="ChannelBlocks_469c14d8-50fb-4666-b427-558b6868a6b2" Description="TxPDO_01" />
+    <Group ID="IO_3dc16d71-7665-442f-942f-20bfc4200c07" Description="1 Byte(s)" />
+    <Group ID="IO_9f44e063-2918-4dfd-8b65-24a8848a3e41" Description="1 Byte(s)" />
+    <Group ID="IO_3081e22a-489b-4814-96f4-7830738e10a8" Description="1 Byte(s)" />
+    <Group ID="IO_468fc6b4-0531-4606-892f-47b44e3cb256" Description="1 Byte(s)" />
+    <Group ID="IO_f29869c7-5a2a-4821-8ed8-96205c8678d6" Description="1 Byte(s)" />
+    <Group ID="IO_6aec5769-dbad-44db-a853-87637a9343c2" Description="1 Byte(s)" />
+    <Group ID="IO_588c8cb2-3609-4ef7-b502-7e643bdfafaa" Description="1 Byte(s)" />
+    <Group ID="IO_28ac2c12-4e5d-4a70-9ec7-ebcda2b29e65" Description="1 Byte(s)" />
+    <Group ID="ChannelBlocks_ff888c7d-f943-45e3-86a6-88626addf11a" Description="TxPDO_02" />
+    <Group ID="IO_b3b63fcd-fb3e-44af-8e22-a2afbd636279" Description="1 Byte(s)" />
+    <Group ID="IO_a004cc3d-b731-4e23-9db0-44f9f61ab8c5" Description="1 Byte(s)" />
+    <Group ID="IO_878c8a23-3a63-42e1-94e4-b06cf4c9534d" Description="1 Byte(s)" />
+    <Group ID="IO_e1b211e9-3a5b-4a2e-a15e-f5739b165c14" Description="1 Byte(s)" />
+    <Group ID="IO_a27cc85b-b89c-42db-a256-cc393843b87f" Description="1 Byte(s)" />
+    <Group ID="IO_c7a2e306-c20a-422f-8e7f-1100758b050e" Description="1 Byte(s)" />
+    <Group ID="IO_e2b7146d-279b-4576-961f-e4dc44c5cc91" Description="1 Byte(s)" />
+    <Group ID="IO_32390b54-27be-4969-a962-be4e61a52291" Description="1 Byte(s)" />
+    <Group ID="ChannelBlocks_05f44e41-c9ab-4a47-be64-14681b8f9c9a" Description="TxPDO_03" />
+    <Group ID="IO_89de0217-4551-41d6-bedf-6fc1037f9145" Description="1 Byte(s)" />
+    <Group ID="IO_8558e8d0-b71d-4751-b843-e24e0b3fc0b9" Description="1 Byte(s)" />
+    <Group ID="IO_f8f21e21-716b-4d5c-9128-bc0bbb765fee" Description="1 Byte(s)" />
+    <Group ID="IO_1f83f021-3c42-4f7a-972c-2e5081dfceaa" Description="1 Byte(s)" />
+    <Group ID="IO_14451fa2-10f8-4e29-8518-78d22b090c99" Description="1 Byte(s)" />
+    <Group ID="IO_552231b1-7c23-492d-8bcb-70ee2c2f9c2f" Description="1 Byte(s)" />
+    <Group ID="IO_e81a7161-5d17-49ef-aad6-4bb5bdbdcade" Description="1 Byte(s)" />
+    <Group ID="IO_b08a2d20-679b-431e-ac8b-f9c1c285acdf" Description="1 Byte(s)" />
+    <Group ID="ChannelBlocks_735eb4df-f689-4a63-a199-47a305cb8457" Description="TxPDO_04" />
+    <Group ID="IO_d2ce0284-5ba9-41fe-b49f-242c2f72ccfc" Description="1 Byte(s)" />
+    <Group ID="IO_1d3dc794-09bd-4475-a419-c266234c6ef9" Description="1 Byte(s)" />
+    <Group ID="IO_4b8ca6d3-f498-443a-8b72-8bfd9608de3e" Description="1 Byte(s)" />
+    <Group ID="IO_a8a31036-494c-4f0e-9e7f-3352be33aaa3" Description="1 Byte(s)" />
+    <Group ID="IO_f9151f47-e501-4668-99aa-8f99583e1065" Description="1 Byte(s)" />
+    <Group ID="IO_91b97db1-10eb-4fef-bb01-9941d65ccf42" Description="1 Byte(s)" />
+    <Group ID="IO_5b890538-7741-4743-86b3-35a3d31369c4" Description="1 Byte(s)" />
+    <Group ID="IO_8494ea38-7ce6-4f7d-bc6d-5e7a2a22c0ed" Description="1 Byte(s)" />
   </Module>
 </Hardware>
